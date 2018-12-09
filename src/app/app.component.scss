@@ -1,0 +1,35 @@
+.contactWrapper{
+    width: 30%;
+    margin: 0 auto;
+    .filter-input {
+        display: block;
+        width: 98%;
+        padding: 1%;
+        height: calc(2.25rem + 2px);
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;    
+    }
+    .list-group {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,.125);
+            h3, p {
+                margin: 4px 0;
+            }
+        }
+    }
+}

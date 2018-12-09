@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<div class="contactWrapper">
+  <input type="text" (keyup)="messageWorker($event)" class="filter-input" placeholder="Search ...">
+  <ul *ngFor="let outerContact of groupedContacts" class="list-group">
+
+    <h2>{{outerContact.key}}</h2>
+
+    <li class="list-group-item" *ngFor="let contact of outerContact.contacts;let i = index">
+      <h3>{{contact.name}}</h3>
+      <p>{{contact.phone}}</p>
+    </li>
+  </ul>
+</div>
